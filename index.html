@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-    <body>
-        <div id="myDIV">
-            <div class="container">
+    <body onClick="onClick()">
+        <div id="">
+            <!-- <div class="container">
                 <div class="row">
                     <div class="col">
                         Here I am
@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 Hello World!
-            </div>
+            </div> -->
             <ul class="nav nav-tabs">
                 <li role="presentation" class="active"><a href="#">Home</a></li>
                 <li role="presentation" ><a href="#">Finances</a></li>
@@ -32,6 +32,15 @@
             <a href="https://youtu.be/Um-PlX6oPBQ?t=13">What coding feels like to me.</a>
 
         </div>
+        <p>Clicks: <a id="clicks">0</a></p>
+
+        <script type="text/javascript">
+            var clicks = 0;
+            function onClick() {
+                clicks += 1;
+                document.getElementById("clicks").innerHTML = clicks
+            }
+        </script>
 
 
 
