@@ -1,0 +1,15 @@
+.active {
+
+}
+
+#myDIV {
+    
+    background: red;
+    animation: mymove 30s infinite;
+  }
+
+
+@keyframes mymove {
+    from {background-color: white;}
+    to {background-color: gray;}
+  }
